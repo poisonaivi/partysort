@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas sorting visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <canvas id="visualizer" width="2048" height="1024"></canvas>
+    <br>
+    <br>
+    <div id="controls">
+        initialize array with
+        <input id="sizeToInit" type="number" placeholder="array size" value="4096" style="width: 75px">
+        elements, sleeping 
+        <input id="sleepTime" type="number" placeholder="sleep duration" value="1" style="width: 50px">
+        ms between major cycles and
+        <input id="minorSleepTime" type="number" placeholder="sleep duration" value="0" style="width: 50px">
+        ms between minor cycles.
+        <br>
+        <button onclick="initialize()">init</button>
+        <button onclick="shuffle();">shuffle</button>
+        <button onclick="reverse();">reverse</button>
+        <button onclick="skip();">skip</button>
+        <br>
+        <br>
+        <button onclick="radixSort();">radixSort</button>
+        <button onclick="mergeSort();">mergeSort</button>
+        <button onclick="quickSort();">quickSort</button>
+        <button onclick="bubbleSort();">bubbleSort</button>
+        <button onclick="selectionSort();">selectionSort</button>
+        <button onclick="bogoSort();">bogoSort</button>
+    </div>
+    <br>
+    <div id="outputContainer">
+        <div id="output">
+        </div>
+    </div>
+    <script src="sort.js"></script>
+    <script>initAndShuffle();</script>
+</body>
+</html>

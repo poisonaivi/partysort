@@ -1,0 +1,32 @@
+body {
+    font-size: large;
+    font-family: monospace;
+    color: #eee;
+    background-color: #444;
+}
+#visualizer {
+    width: 100%;
+    height: 500px;
+    background-color: #222;;
+}
+#outputContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 200px;
+    background-color: #222;;
+    overflow: scroll;
+}
+#output {
+    padding: 10px;
+    color: #1a8;
+    p {
+        margin: 0;
+    }
+}
+.error {
+    color: #f35 !important; 
+}
+.result {
+    font-weight: bold;
+    color: #3fc;
+}
